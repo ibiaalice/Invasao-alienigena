@@ -11,8 +11,13 @@ class Ship():
 		
 		self.rect.centerx = self.screen_rect.centerx;
 		self.rect.bottom = self.screen_rect.bottom
+		
+		self.moving_right = False;
 	
 	def blitme(self):
 		self.screen.blit(self.image, self.rect);
 	
-	
+	def update(self):
+		if self.moving)right:
+			self.rect.centerx += 1;
+			
